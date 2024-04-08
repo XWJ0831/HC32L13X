@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a 许王均, a, LIC=HN0AE-5QS2W-RAPDM-XQ7S4-H4EUJ-GWS61
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMCM1.DLL V1.18.0.0
+Target DLL:      UL2CM3.DLL V1.160.3.0
+Dialog DLL:      TARMCM1.DLL V1.13.0.0
+ 
+<h2>Project:</h2>
+E:\HC32L136-DEMO\MDK\template.uvprojx
+Project File Date:  04/01/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'template_Release'
+compiling Key.c...
+..\source\LED.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\source\Key.c(210): error:  #20: identifier "RUN_MODE" is undefined
+  	if(LED_DisplayMode == RUN_MODE)		//运行模式时按上升键进入设置模式
+..\source\Key.c(212): error:  #20: identifier "SET_MODE" is undefined
+  		LED_DisplayMode = SET_MODE;
+..\source\Key.c(215): error:  #20: identifier "SET_MODE" is undefined
+  	else if(LED_DisplayMode == SET_MODE)		//设置模式时按上升键增加设置值
+..\source\Key.c(226): error:  #20: identifier "VAL_MODE" is undefined
+  	else if(LED_DisplayMode == VAL_MODE)
+..\source\Key.c(238): error:  #20: identifier "RUN_MODE" is undefined
+  	if(LED_DisplayMode == RUN_MODE)		//运行模式时按下降键进入设置模式
+..\source\Key.c(240): error:  #20: identifier "SET_MODE" is undefined
+  		LED_DisplayMode = SET_MODE;
+..\source\Key.c(243): error:  #20: identifier "SET_MODE" is undefined
+  	else if(LED_DisplayMode == SET_MODE)		//设置模式时按下降键减少设置值
+..\source\Key.c(253): error:  #20: identifier "VAL_MODE" is undefined
+  	else if(LED_DisplayMode == VAL_MODE)
+..\source\Key.c: 1 warning, 8 errors
+compiling Serial.c...
+..\source\LED.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\source\Serial.c(381): error:  #20: identifier "ERR_MODE" is undefined
+  			LED_DisplayMode=ERR_MODE;
+..\source\Serial.c(385): error:  #20: identifier "ALARM_MODE" is undefined
+  			LED_DisplayMode=ALARM_MODE;
+..\source\Serial.c(406): error:  #20: identifier "ERR_MODE" is undefined
+  			if(LED_DisplayMode==ERR_MODE||LED_DisplayMode==ALARM_MODE)
+..\source\Serial.c(406): error:  #20: identifier "ALARM_MODE" is undefined
+  			if(LED_DisplayMode==ERR_MODE||LED_DisplayMode==ALARM_MODE)
+..\source\Serial.c(407): error:  #20: identifier "RUN_MODE" is undefined
+  			LED_DisplayMode=RUN_MODE;
+..\source\Serial.c(415): error:  #20: identifier "ERR_MODE" is undefined
+  	LED_DisplayMode=ERR_MODE;
+..\source\Serial.c: 1 warning, 6 errors
+compiling LED.c...
+..\source\LED.c(98): error:  #20: identifier "LED_Tab" is undefined
+  	LED_Value[1] = LED_Tab[tmp1%10];
+..\source\LED.c(100): error:  #20: identifier "LED_Tab" is undefined
+  	LED_Value[0] = LED_Tab[tmp%10];
+..\source\LED.c(124): error:  #20: identifier "LED_Tab" is undefined
+  		LED_Value[1] = LED_Tab[tmp2 / 10];
+..\source\LED.c(155): error:  #20: identifier "PORTD" is undefined
+  	PORTD = 0;//清空 PORTD 寄存器的内容，将所有的 LED 灯熄灭
+..\source\LED.c: 0 warnings, 4 errors
+compiling main.c...
+..\source\main.c(10): warning:  #1-D: last line of file ends without a newline
+  }
+..\source\main.c: 1 warning, 0 errors
+".\output\release\template.axf" - 18 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: HDSC
+                https://raw.githubusercontent.com/hdscmcu/pack/master/HDSC.HC32L136.1.0.1.pack
+                HDSC.HC32L136.1.0.1
+                HC32L136 ARM Cortex-M0+ Device Family Pack
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_template_Release
+  D:\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\Keil5\ARM\PACK\HDSC\HC32L136\1.0.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

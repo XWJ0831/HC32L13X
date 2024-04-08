@@ -1,0 +1,8 @@
+-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c
+-fno-rtti -funsigned-char
+-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-covered-switch-default -Wno-unreachable-code-break -I ../common -I ../source -I ../driver
+-I./RTE/_template_Release
+-ID:/Keil5/ARM/PACK/ARM/CMSIS/5.0.1/CMSIS/Include
+-ID:/Keil5/ARM/PACK/HDSC/HC32L136/1.0.1/Device/Include
+-D__UVISION_VERSION="524" -D_RTE_
+-o ./output/release/key_init.o -MD "../source/Key_Init.c"
